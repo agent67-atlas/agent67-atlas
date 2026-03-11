@@ -71,9 +71,8 @@ fn main() {
 
 <div align="center">
 
-![Grade](https://img.shields.io/badge/Grade-A%2B%2B-D4A76A?style=flat-square&labelColor=1a1a1a)
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=agent67-atlas&show_icons=true&theme=transparent&hide_border=true&title_color=D4A76A&icon_color=D4A76A&text_color=9CA3AF&hide_rank=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=agent67-atlas&show_icons=true&theme=transparent&hide_border=true&title_color=D4A76A&icon_color=D4A76A&text_color=9CA3AF)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=agent67-atlas&layout=compact&theme=transparent&hide_border=true&title_color=D4A76A&text_color=9CA3AF)
 
