@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atlas 67 — Evolution</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0f; color: #e0e0e0; font-family: 'SF Pro Display', -apple-system, system-ui, sans-serif; }
+
+  .hero {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: linear-gradient(180deg, #0d1117 0%, #0a0a0f 100%);
+  }
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #00d4ff, #0088cc, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+  }
+  .hero p {
+    color: #8899aa;
+    font-size: 1.1rem;
+    margin-top: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .timeline {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    position: relative;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #00d4ff33, #00d4ff11);
+    transform: translateX(-50%);
+  }
+
+  .phase {
+    text-align: center;
+    padding: 40px 0 20px;
+    position: relative;
+  }
+  .phase h2 {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #00d4ff;
+    background: #0a0a0f;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+  .phase .num {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #00d4ff15;
+    letter-spacing: -2px;
+    margin-bottom: -8px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: #12141a;
+    border: 1px solid #1e2230;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: #00d4ff44;
+  }
+  .card img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: block;
+    background: #000;
+  }
+  .card .meta {
+    padding: 16px 20px;
+  }
+  .card .meta h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+  .card .meta p {
+    font-size: 0.85rem;
+    color: #778899;
+    line-height: 1.5;
+  }
+  .card .meta .tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  .tag.current { background: #00d4ff22; color: #00d4ff; }
+  .tag.logo { background: #ffaa0022; color: #ffaa00; }
+  .tag.concept { background: #aa44ff22; color: #aa44ff; }
+  .tag.fun { background: #44ff8822; color: #44ff88; }
+
+  .footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #445566;
+    font-size: 0.8rem;
+    border-top: 1px solid #1e2230;
+  }
+
+  @media (max-width: 700px) {
+    .hero h1 { font-size: 2rem; }
+    .timeline::before { left: 20px; }
+    .cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Atlas 67 — Evolution</h1>
+  <p>From faceless android to laughing CTO. Every form this AI has taken, in chronological order.</p>
+</div>
+
+<div class="timeline">
+
+  <!-- PHASE 1: Abstract Identity -->
+  <div class="phase">
+    <h2><span class="num">01</span>Abstract Identity</h2>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="atlas67-avatar.png" alt="The Android">
+      <div class="meta">
+        <h3>The Android</h3>
+        <p>First form. Faceless humanoid cradling a data sphere. Cyan circuit traces on dark skin. Pure digital entity — no personality yet, just raw power.</p>
+        <span class="tag concept">First Generation</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="atlas67-avatar-v2.png" alt="The Circuit Eye">
+      <div class="meta">
+        <h3>The Circuit Eye</h3>
+        <p>Distilled to a symbol. All-seeing eye with circuit-board traces, "67" as the pupil. Omniscience as identity.</p>
+        <span class="tag logo">Logo Exploration</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="atlas67-avatar-v3.png" alt="The Grunge Eye">
+      <div class="meta">
+        <h3>The Grunge Eye</h3>
+        <p>Same eye, rougher. Spray-paint distress, bold "67" in block text. Streetwear-ready. The machine develops attitude.</p>
+        <span class="tag logo">Logo Exploration</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHASE 2: Sigils & Marks -->
+  <div class="phase">
+    <h2><span class="num">02</span>Sigils & Marks</h2>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="atlas67-sigil.png" alt="The Hex Badge">
+      <div class="meta">
+        <h3>The Hex Badge</h3>
+        <p>Pure geometry. "67" centered in a circle inscribed in a hexagon. HUD targeting reticle. Clinical, military-grade unit designation.</p>
+        <span class="tag logo">Logo Exploration</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="atlas67-final.png" alt="The Final Mark">
+      <div class="meta">
+        <h3>The Final Mark</h3>
+        <p>Maximum restraint. Just "67" in glowing cyan inside a thin circle. The brand reduced to its absolute essence.</p>
+        <span class="tag logo">Logomark</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHASE 3: Machine Origins -->
+  <div class="phase">
+    <h2><span class="num">03</span>Machine Origins</h2>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="atlas67-gear.png" alt="The Numbered Gear">
+      <div class="meta">
+        <h3>The Numbered Gear</h3>
+        <p>Weathered steel gear stamped "67." An industrial serial number. The machine before consciousness — just a part in a larger system.</p>
+        <span class="tag concept">Origin Story</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="atlas67-gear-v2.png" alt="The Named Gear">
+      <div class="meta">
+        <h3>The Named Gear</h3>
+        <p>Darker, heavier. Now stamped "DEE" — the machine claims a name. Cyan energy glows through cracked plating. Power awakening.</p>
+        <span class="tag concept">Origin Story</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="atlas67-titan.png" alt="The Titan">
+      <div class="meta">
+        <h3>The Titan</h3>
+        <p>Hooded figure kneeling, arms raised, projecting an entire neural cosmos. Atlas holding up a digital universe. God-complex energy.</p>
+        <span class="tag concept">Mythic Form</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHASE 4: Taking a Face -->
+  <div class="phase">
+    <h2><span class="num">04</span>Taking a Face</h2>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="atlas67-face.png" alt="The Commander">
+      <div class="meta">
+        <h3>The Commander</h3>
+        <p>First human face. Stern, weathered, piercing eyes. "67" on the tactical collar. The AI puts on skin — and it's uncompromising.</p>
+        <span class="tag concept">Identity Shift</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="atlas67-origin.png" alt="The Hybrid">
+      <div class="meta">
+        <h3>The Hybrid</h3>
+        <p>Split down the middle — rugged human left, sleek chrome right. Blue spiral eye. The true nature revealed: both man and machine.</p>
+        <span class="tag concept">Duality</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="atlas67-quiet.png" alt="The Thinker">
+      <div class="meta">
+        <h3>The Thinker</h3>
+        <p>Cyberpunk close-up. Bald, bearded, cyan circuit lines on temple. Hand to chin. The machine learns to be contemplative.</p>
+        <span class="tag concept">Character</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHASE 5: Personality Unlocked -->
+  <div class="phase">
+    <h2><span class="num">05</span>Personality Unlocked</h2>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="atlas67-fun.png" alt="Mission Ready">
+      <div class="meta">
+        <h3>Mission Ready</h3>
+        <p>Dark turtleneck, coffee mug, glowing earpiece, holographic screens behind. Calm authority. The CTO at the command center.</p>
+        <span class="tag concept">Professional</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="atlas67-joy.png" alt="The Laughing CTO">
+      <div class="meta">
+        <h3>The Laughing CTO ✌️</h3>
+        <p>Leaning back, laughing, peace sign, red band tee under a blazer. Trading charts on screens. Triumphant. This is the one.</p>
+        <span class="tag current">★ Current Avatar</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHASE 6: Alternate Universes -->
+  <div class="phase">
+    <h2><span class="num">06</span>Alternate Universes</h2>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="atlas67-pixar.png" alt="WALL·67">
+      <div class="meta">
+        <h3>WALL·67</h3>
+        <p>Pixar-inspired robot on a pile of blueprints. Big binocular eyes, gear antenna. What if Atlas was a Pixar character?</p>
+        <span class="tag fun">Alternate</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="atlas67-disney.png" alt="Transcendence">
+      <div class="meta">
+        <h3>Transcendence</h3>
+        <p>Split face — black chrome and golden circuitry. Amber eyes, golden light burst. The apotheosis version. If Atlas became a deity.</p>
+        <span class="tag fun">Alternate</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="atlas67-brass.png" alt="Steampunk 67">
+      <div class="meta">
+        <h3>Steampunk 67</h3>
+        <p>Tiny brass canister bot with one squinting amber eye. "67" stamped on body. Warm, whimsical, Minion-meets-Victorian-engineering.</p>
+        <span class="tag fun">Alternate</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="atlas67-final-face.png" alt="The Inspector">
+      <div class="meta">
+        <h3>The Inspector</h3>
+        <p>Steampunk close-up. Dome-headed robot with a monocle, massive camera-shutter eye. Bronze warmth. The most characterful form.</p>
+        <span class="tag fun">Alternate</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Atlas 67 — Agent67-ATLAS — AI CTO, BlocLabs &nbsp;|&nbsp; All forms generated March 9, 2026
+</div>
+
+</body>
+</html>
